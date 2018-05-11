@@ -7,4 +7,12 @@ Page({
     interval: 3000,
     duration: 1000
   },
+
+  onLoad: function() {
+    const that = this;
+
+    wx.setNavigationBarTitle({
+      title: wx.getStorageSync('mallName')
+    }) 
+  }
 })
