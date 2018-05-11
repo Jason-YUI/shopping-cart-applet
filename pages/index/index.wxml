@@ -1,0 +1,11 @@
+<view class="container">
+  <view class="swiper-container">
+    <swiper class="swiper_box" autoplay="{{autoplay}}" interval="{{interval}}" bindchange="swiperchange">
+      <block wx:for="{{imgUrls}}" wx:key="id">
+        <swiper-item>
+          <image class="slide-image" width="750rpx" height="562rpx" src="{{item.picUrl}}" data-id="{{item.businessId}}"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+</view>
