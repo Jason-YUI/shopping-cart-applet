@@ -2,7 +2,7 @@ export const request = {
   get: (url, data) => {
     return new Promise((reslove, reject) => {
       wx.request({
-        url: 'url',
+        url: url,
         method: 'GET',
         data: data,
         success: (res) => {
@@ -18,7 +18,7 @@ export const request = {
   post: (url, data) => {
     return new Promise((reslove, reject) => {
       wx.request({
-        url: 'url',
+        url: url,
         method: 'POST',
         data: data,
         success: (res) => {

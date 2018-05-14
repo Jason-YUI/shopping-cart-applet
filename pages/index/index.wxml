@@ -1,11 +1,16 @@
 <view class="container">
   <view class="swiper-container">
     <swiper class="swiper_box" autoplay="{{autoplay}}" interval="{{interval}}" bindchange="swiperchange">
-      <block wx:for="{{imgUrls}}" wx:key="id">
+      <block wx:for="{{banners}}" wx:key="id">
         <swiper-item>
-          <image class="slide-image" width="750rpx" height="562rpx" src="{{item.picUrl}}" data-id="{{item.businessId}}"></image>
+          <image class="slide-image" width="750rpx" height="562rpx" src="{{item.picUrl}}_m" data-id="{{item.businessId}}"></image>
         </swiper-item>
       </block>
     </swiper>
+    <view class="dots">
+      <block wx:for="{{banners}}" wx:key="unqiue">
+        <view class="dot{{index === swiperCurrent ? 'active' : ''}}"></view>
+      </block>
+    </view>
   </view>
 </view>

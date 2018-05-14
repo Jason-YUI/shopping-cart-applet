@@ -1,0 +1,23 @@
+page {
+  height: 100%
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: orange;
+}
+
+text {
+  font-size: 30rpx;
+  display: flex;
+  color: #fff;
+  background: red;
+  width: 340rpx;
+  height: 80rpx;
+  border-radius: 50rpx;
+  align-items: center;
+  justify-content: center;
+}
+
+ 
